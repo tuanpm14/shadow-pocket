@@ -1,0 +1,8 @@
+#!name=Truecaller Premium
+#!desc=Truecaller Gold
+
+[MITM]
+hostname = %APPEND% premium*.truecaller.com
+
+[Script]
+Truecaller = type=http-response,pattern=^https://premium-(.+)\.truecaller\.com/v\d/(subscriptions|products/apple),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/tuanpm14/shadow-pocket/refs/heads/main/truecaller.js
