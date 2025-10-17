@@ -32,7 +32,7 @@ const features = [
   { "id": "caller_id", "rank": 29, "status": "Included", "isFree": false },
   { "id": "spam_blocking", "rank": 30, "status": "Included", "isFree": false },
   { "id": "whatsapp_caller_id", "rank": 31, "status": "Excluded", "isFree": false },
-  { "id": "number_search_throttled", "rank": 32, "status": "Included", "isFree": false }
+  { "id": "number_search_throttled", "rank": 32, "status": "Excluded", "isFree": false }
 ];
 var obj;
 switch ($request.url) {
@@ -72,7 +72,9 @@ switch ($request.url) {
                 "selectionRank": 5,
                 "displayOrder": 5,
                 "isEntitledPremiumScreenProduct": false
-              }
+              },
+              "isFreeTrial": false,
+              "numberSearchThrottled": false
             }
           ],
           "feature": features,
