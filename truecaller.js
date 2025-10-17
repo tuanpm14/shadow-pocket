@@ -24,14 +24,15 @@ const features = [
   { "id": "premium_app_icon", "rank": 22, "status": "Included", "isFree": false },
   { "id": "ghost_call", "rank": 23, "status": "Included", "isFree": false },
   { "id": "live_chat_support", "rank": 24, "status": "Included", "isFree": false },
-  { "id": "call_recording", "rank": 25, "status": "Included", "isFree": false },
+  { "id": "call_recording", "rank": 25, "status": "Excluded", "isFree": false },
   { "id": "premium_support", "rank": 25, "status": "Included", "isFree": false },
-  { "id": "family_sharing", "rank": 26, "status": "Included", "isFree": false },
+  { "id": "family_sharing", "rank": 26, "status": "Excluded", "isFree": false },
   { "id": "gold_caller_id", "rank": 27, "status": "Included", "isFree": false },
   { "id": "announce_call", "rank": 28, "status": "Included", "isFree": false },
   { "id": "caller_id", "rank": 29, "status": "Included", "isFree": false },
   { "id": "spam_blocking", "rank": 30, "status": "Included", "isFree": false },
-  { "id": "whatsapp_caller_id", "rank": 31, "status": "Included", "isFree": false }
+  { "id": "whatsapp_caller_id", "rank": 31, "status": "Excluded", "isFree": false },
+  { "id": "search", "rank": 32, "status": "Included", "isFree": false }
 ];
 var obj;
 switch ($request.url) {
