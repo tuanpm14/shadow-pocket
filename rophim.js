@@ -1,6 +1,7 @@
 const desiredCoinBalance = 999999999;
 const desiredVipExpiresAt = 4096137600;
 const desiredIsVip = true;
+const desiredIsVerified = true;
 
 const targetPath = /v\d\/user\/info/;
 
@@ -13,6 +14,7 @@ if (typeof $request !== "undefined" && targetPath.test($request.url) && body) {
       payload.result.coin_balance = desiredCoinBalance;
       payload.result.vip_expires_at = desiredVipExpiresAt;
       payload.result.is_vip = desiredIsVip;
+      payload.result.is_verified = desiredIsVerified;
       body = JSON.stringify(payload);
     }
   } catch (err) {
