@@ -1,4 +1,4 @@
-const desiredCoinBalance = 999999;
+const desiredCoinBalance = 9999999999;
 const desiredVipExpiresAt = 253394586000;
 const desiredIsVip = true;
 
