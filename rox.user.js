@@ -2,7 +2,7 @@ const desiredCoinBalance = 999999;
 const desiredVipExpiresAt = 253394586000;
 const desiredIsVip = true;
 
-const targetPath = /\/v1\/user\/info/;
+const targetPath = /v\d\/user\/info/;
 
 let body = $response?.body;
 

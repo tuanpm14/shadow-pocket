@@ -1,8 +1,8 @@
 #!name=RoX Ultimate
-#!desc=Ultimate patch for RoPhim
-
-[Script]
-RoPhim = type=http-response,pattern=api.rofilm.net||rophimapi.net,requires-body=1,max-size=0,binary-body-mode=0,debug=1,script-path=https://raw.githubusercontent.com/tuanpm14/shadow-pocket/refs/heads/main/rox.user.js
+#!desc=Ultimate for RoPhim
 
 [MITM]
-hostname = api.rofilm.net, rophimapi.net
+hostname = %APPEND% api.rofilm.net
+
+[Script]
+RoPhim = type=http-response,pattern=^https://api\.rofilm\.net/api/app/v\d/(user/info),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/tuanpm14/shadow-pocket/refs/heads/main/rox.user.js
