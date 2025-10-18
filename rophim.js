@@ -1,5 +1,5 @@
-const desiredCoinBalance = 9999999999;
-const desiredVipExpiresAt = 253394586000;
+const desiredCoinBalance = 999999999;
+const desiredVipExpiresAt = 4096137600;
 const desiredIsVip = true;
 
 const targetPath = /v\d\/user\/info/;
