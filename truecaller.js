@@ -32,7 +32,8 @@ const features = [
   { "id": "caller_id", "rank": 29, "status": "Included", "isFree": false },
   { "id": "spam_blocking", "rank": 30, "status": "Included", "isFree": false },
   { "id": "whatsapp_caller_id", "rank": 31, "status": "Excluded", "isFree": false },
-  { "id": "number_search_throttled", "rank": 32, "status": "Excluded", "isFree": false }
+  { "id": "apple_premium_monthly_v0", "rank": 33, "status": "Included", "isFree": false },
+  { "id": "apple_assistantai_monthly_t4_v1", "rank": 34, "status": "Included", "isFree": false }
 ];
 var obj;
 switch ($request.url) {
@@ -72,9 +73,11 @@ switch ($request.url) {
                 "selectionRank": 5,
                 "displayOrder": 5,
                 "isEntitledPremiumScreenProduct": false
-              },
-              "isFreeTrial": false,
-              "numberSearchThrottled": false
+              }
+            },
+            {
+              "id": "apple_premium_monthly_v0",
+              "rank": 33
             }
           ],
           "feature": features,
